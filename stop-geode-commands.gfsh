@@ -1,0 +1,5 @@
+connect --locator=192.168.0.1[10334]
+stop server --name=server37-1
+stop server --name=server36-1
+stop locator --name=locator36
+

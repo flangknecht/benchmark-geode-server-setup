@@ -1,0 +1,4 @@
+start locator --name=locator36 --port=10334 --bind-address=192.168.0.1
+start server --name=server36-1 --server-bind-address=192.168.0.1 --server-port=40404 --locators=192.168.0.1[10334]
+create region --name=regionA --type=REPLICATE
+
