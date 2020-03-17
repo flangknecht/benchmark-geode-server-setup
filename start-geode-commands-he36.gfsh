@@ -2,5 +2,5 @@ start locator --name=locator36-1 --port=10334 --bind-address=192.168.0.1 --J='-D
 start locator --name=locator36-2 --port=10335 --bind-address=192.168.0.1 --J='-Dp2p.HANDSHAKE_POOL_SIZE=200' --locators=192.168.0.1[10334]
 start locator --name=locator36-3 --port=10336 --bind-address=192.168.0.1 --J='-Dp2p.HANDSHAKE_POOL_SIZE=200' --locators=192.168.0.1[10334],192.168.0.1[10335]
 start server --name=server36-1 --server-bind-address=192.168.0.1 --server-port=40404 --locators=192.168.0.1[10334],192.168.0.1[10335],192.168.0.1[10336] --max-connections=200 --J='-Dp2p.HANDSHAKE_POOL_SIZE=200'
-start server --name=server36-2 --server-bind-address=192.168.0.1 --server-port=40404 --locators=192.168.0.1[10334],192.168.0.1[10335],192.168.0.1[10336] --max-connections=200 --J='-Dp2p.HANDSHAKE_POOL_SIZE=200'
+start server --name=server36-2 --server-bind-address=192.168.0.1 --server-port=40405 --locators=192.168.0.1[10334],192.168.0.1[10335],192.168.0.1[10336] --max-connections=200 --J='-Dp2p.HANDSHAKE_POOL_SIZE=200'
 create region --name=regionA --type=REPLICATE
